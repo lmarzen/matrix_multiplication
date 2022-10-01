@@ -15,10 +15,12 @@ import random
 
 try:
     dim_x, dim_y = int(sys.argv[1]), int(sys.argv[2])
-except Exception, e:
+except:
     sys.stderr.write("error parsing matrix dimensions ...\n")
     raise
 
 
-for row in xrange(0, dim_x):
-    print "\t".join([ unicode(random.uniform(0, 9999)) for x in xrange(0, dim_y) ])
+for row in range(0, dim_x):
+    delim = "\t"
+    x = [random.uniform(0, 9999) for x in range(0, dim_y) ]
+    print(delim.join(map(str, x)))
