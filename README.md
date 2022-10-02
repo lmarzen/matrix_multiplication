@@ -14,3 +14,22 @@ The multiplication of two matrices is to be implemented as
 
 ## Matrix multiplication
 The aim is to multiply two matrices together.To multiply two matrices, the number of columns of the first matrix has to match the number of lines of the second matrix. The calculation of the matrix solution has independent steps, it is possible to parallelize the calculation.
+
+
+## Results
+
+    * * * * * * * 100x100 Matrix
+    with sequential    0m0.019s
+    with omp           0m0.035s
+    with omp_gpu       0m0.235s
+    
+    * * * * * * * 1000x1000 Matrix
+    with sequential    0m3.608s
+    with omp           0m2.059s
+    with omp_gpu       0m2.230s
+    
+    * * * * * * * 5000x5000 Matrix
+    with sequential    13m41.113s
+    with omp           3m16.596s
+    with omp_gpu       1m19.501s
+    
