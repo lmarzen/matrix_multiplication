@@ -49,6 +49,9 @@ echo "with sequential    $cal_t"
 cal_t=$((time bin/omp data/mat_100x100.txt data/mat_100x100b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with omp           $cal_t"
 
+cal_t=$((time bin/omp_gpu data/mat_100x100.txt data/mat_100x100b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
+echo "with omp_gpu       $cal_t"
+
 cal_t=$((time bin/thread2 data/mat_100x100.txt data/mat_100x100b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with thread2       $cal_t"
 
@@ -63,6 +66,9 @@ echo "with sequential    $cal_t"
 cal_t=$((time bin/omp data/mat_1000x1000.txt data/mat_1000x1000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with omp           $cal_t"
 
+cal_t=$((time bin/omp_gpu data/mat_1000x1000.txt data/mat_1000x1000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
+echo "with omp_gpu       $cal_t"
+
 cal_t=$((time bin/thread2 data/mat_1000x1000.txt data/mat_1000x1000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with thread2       $cal_t"
 
@@ -76,6 +82,9 @@ echo "with sequential    $cal_t"
 
 cal_t=$((time bin/omp data/mat_5000x5000a.txt data/mat_5000x5000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with omp           $cal_t"
+
+cal_t=$((time bin/omp_gpu data/mat_5000x5000a.txt data/mat_5000x5000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
+echo "with omp_gpu       $cal_t"
 
 cal_t=$((time bin/thread2 data/mat_5000x5000a.txt data/mat_5000x5000b.txt)  2>&1 > /dev/null | grep real | awk '{print $2}')
 echo "with thread2       $cal_t"
