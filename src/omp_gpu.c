@@ -117,7 +117,7 @@ int main(int argc, char **argv)
     unsigned int m_2_rows = m_2->rows;
     unsigned int m_2_cols = m_2->cols;
 
-    #pragma omp target teams distribute parallel for \
+    #pragma omp target teams distribute parallel for collapse(2) \
             map(tofrom: result_data[0:result_size])  \
             map(to: result_rows, result_cols,        \
                     m_1_rows, m_1_cols,              \

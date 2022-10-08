@@ -27,7 +27,6 @@ if [ ! -f data/mat_1000x1000b.txt ]; then
     python random_float_matrix.py 1000 1000 > data/mat_1000x1000b.txt
 fi
 
-
 if [ ! -f data/mat_5000x5000a.txt ]; then
     echo "generate 5000x5000 matrix..."
     python random_float_matrix.py 5000 5000 > data/mat_5000x5000a.txt

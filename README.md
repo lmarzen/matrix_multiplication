@@ -24,12 +24,12 @@ The aim is to multiply two matrices together.To multiply two matrices, the numbe
     with omp_gpu       0m0.235s
     
     * * * * * * * 1000x1000 Matrix
-    with sequential    0m3.608s
-    with omp           0m2.059s
-    with omp_gpu       0m2.230s
+    with sequential    0m2.302s
+    with omp           0m1.808s
+    with omp_gpu       0m1.713s
     
     * * * * * * * 5000x5000 Matrix
-    with sequential    13m41.113s
-    with omp           3m16.596s
-    with omp_gpu       1m19.501s
+    with sequential    11m13.876s
+    with omp           2m16.492s
+    with omp_gpu       0m46.481s
     

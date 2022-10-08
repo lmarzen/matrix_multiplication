@@ -1,5 +1,6 @@
 bin/seq
 bin/omp
+bin/omp_gpu
 bin/thread
 bin/thread2
 bin/mpi
